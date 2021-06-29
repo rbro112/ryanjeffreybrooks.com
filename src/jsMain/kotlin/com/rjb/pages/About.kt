@@ -12,14 +12,13 @@ import com.rjb.style.FlexStyles.alignSelfCenter
 import com.rjb.style.FlexStyles.flex
 import com.rjb.style.RJBStyles.imageBorder
 import com.rjb.style.RJBStyles.roundedImage
-import com.rjb.style.SizeStyles.SIZE_32
+import com.rjb.style.SizeStyles.h32
 import com.rjb.style.SizeStyles.pl6
 import com.rjb.style.SizeStyles.py6
+import com.rjb.style.SizeStyles.w32
 import com.rjb.style.TextStyles.fontBody
 import com.rjb.style.TextStyles.fontMono
 import com.rjb.style.TextStyles.textBase
-import org.jetbrains.compose.web.css.height
-import org.jetbrains.compose.web.css.width
 import org.jetbrains.compose.web.dom.A
 import org.jetbrains.compose.web.dom.Div
 import org.jetbrains.compose.web.dom.Img
@@ -46,11 +45,7 @@ fun AboutContent() {
         Img(
             src = "profile_picture.png",
             attrs = {
-                classes(roundedImage, imageBorder)
-                style {
-                    width(SIZE_32)
-                    height(SIZE_32)
-                }
+                classes(roundedImage, imageBorder, w32, h32)
             }
         )
 

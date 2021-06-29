@@ -251,4 +251,5 @@ object SizeStyles : StyleSheet() {
      */
 
     val wFull by attr("width", 100.percent)
+    val w32 by width(SIZE_32)
 }
