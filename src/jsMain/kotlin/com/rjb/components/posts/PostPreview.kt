@@ -2,7 +2,6 @@ package com.rjb.components.posts
 
 import androidx.compose.runtime.Composable
 import com.rjb.components.DividerDoubleDotted
-import com.rjb.components.DividerLight
 import com.rjb.models.Link
 import com.rjb.models.Post
 import com.rjb.models.Tag
@@ -17,11 +16,10 @@ import com.rjb.style.SizeStyles.mr6
 import com.rjb.style.SizeStyles.mt1
 import com.rjb.style.SizeStyles.mt3
 import com.rjb.style.SizeStyles.my1
-import com.rjb.style.SizeStyles.my2
+import com.rjb.style.SizeStyles.my3
 import com.rjb.style.SizeStyles.my4
 import com.rjb.style.SizeStyles.p1
 import com.rjb.style.SizeStyles.pr1
-import com.rjb.style.SizeStyles.pr6
 import com.rjb.style.SizeStyles.py1
 import com.rjb.style.SizeStyles.py2
 import com.rjb.style.TextStyles.fontBold
@@ -115,7 +113,7 @@ fun CTA(
                 textPrimary,
                 hoverUnderline,
                 p1,
-                my2,
+                my3,
                 bgButtonHover
             )
         )

@@ -9,6 +9,7 @@ import com.rjb.components.posts.PostPreview
 import com.rjb.models.ExternalLink
 import com.rjb.models.Post
 import com.rjb.models.Tag.Companion.airbnbTag
+import com.rjb.models.Tag.Companion.articleTag
 import com.rjb.models.Tag.Companion.talkTag
 import com.rjb.routing.Path
 import kotlin.js.Date
@@ -22,8 +23,18 @@ val airbnbTechTalk = Post(
     buttonText = "Watch →"
 )
 
+val airbnbGPPost = Post(
+    titleText = "A Deep Dive into Airbnb’s Server-Driven UI System",
+    date = Date(2021, 5, 29),
+    description = "A deep dive into the server-driven UI system my team and I built at Airbnb called the Ghost Platform \uD83D\uDC7B.",
+    link = ExternalLink(link = "https://medium.com/airbnb-engineering/a-deep-dive-into-airbnbs-server-driven-ui-system-842244c5f5"),
+    tags = listOf(airbnbTag, articleTag),
+    buttonText = "Read more →"
+)
+
 val postsList = listOf(
     airbnbTechTalk,
+    airbnbGPPost,
 )
 
 @Composable
