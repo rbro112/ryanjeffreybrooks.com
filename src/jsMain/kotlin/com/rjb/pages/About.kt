@@ -52,14 +52,21 @@ fun AboutContent() {
         Div(attrs = {
             classes(fontBody, fontMono, pl6, textBase, alignSelfCenter)
         }) {
-            Text("I'm Ryan, an Android engineer at ")
+            Text("I'm Ryan, the first engineer at ")
+            A(
+                href = "https://emergetools.com",
+                attrs = { classes(darkOrange) }
+            ) {
+                Text("Emerge")
+            }
+            Text(". I've previously worked at ")
             A(
                 href = "https://airbnb.com",
                 attrs = { classes(darkOrange) }
             ) {
                 Text("Airbnb")
             }
-            Text(". I've previously worked at ")
+            Text(" and ")
             A(
                 href = "https://mailchimp.com",
                 attrs = { classes(darkOrange) }
